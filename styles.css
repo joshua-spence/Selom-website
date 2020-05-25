@@ -1,0 +1,450 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    padding: 15px 100px;
+}
+
+header img{
+    max-width: 50px;
+}
+
+header h1{
+    font-family:'Lato', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    position:absolute;
+    text-transform: uppercase;
+    left: 160px;
+    bottom: 30px;
+}
+
+
+
+/*Landing page 2*/
+
+.top-page{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(./images/park2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 170px;
+    display: grid;
+    grid-template-columns: 5.6em 1fr 6em;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". top-text ."
+}
+
+.top-text{
+    grid-area: top-text;
+    padding: 0.4em;
+    border-left: 5px solid white;
+}
+
+
+.top-text h2{
+    color: white;
+    font-size: 4em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display SC', serif;
+    ;
+}
+
+.top-text p{
+    color: white;
+    font-size: 2em;
+    font-family:'Montez', cursive ; 
+}
+
+        @media only screen and (max-width: 1188px){
+            .top-text h2{
+                font-size: 3em;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            
+            .top-text p{
+                font-size: 2em;
+                font-family:'Montez', cursive ;
+            }
+
+        }
+
+        @media only screen and (max-width: 940px){
+            .top-text h2{
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+            
+            .top-text p{
+                font-size: 1.5em;
+                font-family:'Montez', cursive ;
+            }
+
+        }
+
+        @media only screen and (max-width: 820px){
+            .top-text h2{
+                word-break: normal;
+                font-size: 2.2em;
+                margin-bottom: 20px;
+            }
+
+
+            .top-text p{
+                font-size: 1.5em;
+                font-family:'Montez', cursive ;
+            }
+
+        }
+
+        @media only screen and (max-width: 690px){
+                .top-text h2{
+                    word-break: normal;
+                    font-size: 1.5em;
+                    margin-bottom: 20px;
+                }
+    
+    
+                .top-text p{
+                    font-size: 1.5em;
+                    font-family:'Montez', cursive ;
+                }
+    
+                .top-page{
+                    padding-top: 100px;
+                    padding-bottom: 60px;
+                    display: grid;
+                    grid-template-columns: 1.4em 1fr 2em;
+                    grid-template-areas:
+                    ". top-text ." */
+                }
+    
+                header{
+                    padding: 5px 20px;
+                }
+                
+                header h1{
+                    left: 75px;
+                }
+        } 
+             
+
+    
+
+
+
+
+/*Our Services 2*/
+
+.bullet-points{
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-gap: 30px;
+    justify-content: center;
+    padding: 120px 0px;
+    background-color : #d4ebd0;
+    grid-template-areas:
+    "item item item item" 
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8";
+}
+
+.bullet-points h2{
+    font-family:'Montserrat', sans-serif ;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2em;
+    color: white;
+}
+
+.bullet-points h3{
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 10px;
+    color: white;
+}
+
+        @media only screen and (max-width:1100px){
+            .bullet-points{
+                grid-template-columns: 200px 200px 200px 210px;
+                grid-gap: 50px;
+                grid-template-areas: 
+                "item item item item"
+                "item1 item2 item3 item4"
+                "item5 item6 item7 item8";
+            }
+        } 
+
+        @media only screen and (max-width:1010px){
+            .bullet-points{
+                grid-template-columns: 215px 215px;
+                grid-template-areas: 
+                "item item"
+                "item1 item2"
+                "item3 item4"
+                "item5 item6"
+                "item7 item8";
+                
+            }
+            .bullet-points h3{
+                font-size: 1.3em;
+                font-weight: 900;
+                margin-top: 10px;
+                color: white;
+            }   
+
+            .bullet-points h2{
+                font-size: 2em;
+            }    
+        }
+
+        @media only screen and (max-width: 510px){
+            .bullet-points{
+                grid-template-columns: 250px;
+                grid-gap: 35px;
+                grid-template-areas: 
+                "item"
+                "item1"
+                "item2"
+                "item3"
+                "item4"
+                "item5"
+                "item6"
+                "item7"
+                "item8";
+            }   
+            
+            .bullet-points h3{
+                font-size: 1em;
+            }
+
+            .item h2{
+                font-size: 1.8em;
+                font-weight: 900;
+            }
+
+            .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+
+.item {grid-area: item;}
+.item1{ grid-area: item1;}
+.item2{ grid-area: item2;}
+.item3{ grid-area: item3;}
+.item4{ grid-area: item4;}
+.item5{ grid-area: item5;}
+.item6{ grid-area: item6;}
+.item7{ grid-area: item7;}
+.item8{ grid-area: item8;}
+
+.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8{
+    padding: 1em;
+    box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.75);
+    border-radius: 10%;
+    background-color: #a4c5c6;
+}
+
+
+
+/*Text Banner 'Your wellbeing is our priority*/
+
+.text-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(./images/holding-hands.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+.text-banner h2{
+    color: white;
+    font-family: 'Montez', cursive;
+    font-size: 3em;
+    font-weight: 100;
+    text-align: center;
+}
+
+        @media only screen and (max-width: 1033px){
+            .text-banner h2{
+                color: white;
+                font-family: 'Montez', cursive;
+                font-size: 3em;
+                padding-left: 1em;
+                font-weight: 500;
+                text-align: center;   
+        }
+        }
+
+        @media only screen and (max-width: 700px){
+            .text-banner h2{
+                color: white;
+                font-family: 'Montez', cursive;
+                font-size: 2em;
+                font-weight: 500;
+                text-align: center;   
+        }
+        }
+
+/*About selom care seection*/
+.about-container{
+    display: flex;
+    justify-content: left;
+    padding: 100px 0px;
+    background-color: #a4c5c6;
+
+}
+
+
+.about-selom-care{
+    padding: 1em 6.5em;
+    width: 100%;
+    align-items: left;
+    background-color: #a4c5c6;
+}
+
+@media only screen and (max-width:544px ){
+    .about-selom-care{
+        padding: 1em 1.5em;
+    }    
+
+    .about-selom-care h2{
+        font-size: 0.8em;
+    }    
+}
+
+.about-selom-care h2{
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.about-selom-care p{
+    color:white;
+    font-weight: 600;
+    font-size: 1.2em;
+    width: 95%;
+    margin-bottom: 30px; 
+    line-height: 1.5em;
+}
+
+
+/* Principles banner*/
+
+.principles-banner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4ebd0;
+}
+
+.principles-banner h3{
+    color:#7d9596;
+    margin-bottom: 30px;
+    font-size: 3.2em;
+    font-weight: 400;
+    font-family:  'Montez', cursive;
+}
+
+.principles-banner p{
+    color: #7d9596;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+@media only screen and (max-width:500px){
+    .principles-banner p{
+        font-size: 1em;
+    }    
+}
+
+
+
+/*Contact information at the bottom*/
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    margin-bottom: 50px;   
+
+}
+
+.bottom h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.bottom h3{
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+.bottom p{
+    margin-bottom: 15px;
+}
+
+.email-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    background-color: black;
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+
+}
+
+.button:hover{
+    transition: 0.3s;
+    background-color: rgb(46, 46, 46);
+}
+
+
+
+/*Foooter*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+footer p{
+    font-size: 0.5em;
+}
